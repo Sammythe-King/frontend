@@ -188,7 +188,11 @@
                 <img :src="getImageUrl(lesson.image)" class="lesson-image" alt="Lesson Image">
                 <div class="card-body">
                     <h3 class="lesson-title">{{ lesson.title }}</h3>
-                    <p>📍 {{ lesson.location }}</p>
+                    <p> <img 
+                        :src="getImageUrl('pin.png')" alt="Location"
+                        style="width: 16px; height: 16px; object-fit: contain;"
+                        >
+                         {{ lesson.location }}</p>
                     <div class="lesson-info">
                         <span>💰 ${{ lesson.price }}</span>
                         <span>🎟 {{ lesson.spaces > 0 ? lesson.spaces : 0 }} spaces left</span>
