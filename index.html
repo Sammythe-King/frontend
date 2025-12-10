@@ -192,9 +192,16 @@
                         :src="getImageUrl('pin.png')" alt="Location"
                         style="width: 16px; height: 16px; object-fit: contain;"
                         >
-                         {{ lesson.location }}</p>
+                         {{ lesson.location }}
+                    </p>
                     <div class="lesson-info">
-                        <span>💰 ${{ lesson.price }}</span>
+                        <span>
+                            <img 
+                            :src="getImageUrl('money.png')" 
+                            alt="Price"
+                            style="width: 16px; height: 16px; object-fit: contain;"
+                            >
+                            ${{ lesson.price }}</span>
                         <span>🎟 {{ lesson.spaces > 0 ? lesson.spaces : 0 }} spaces left</span>
                     </div>
                     <button 
