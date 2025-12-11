@@ -6,11 +6,11 @@
     <title>Hubsy - Partial Vue App</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <style>
-        /* --- RESET & BASE --- */
+        
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: system-ui, -apple-system, sans-serif; background-color: #fefefe; color: #333; }
         
-        /* --- HEADER & NAV (IMPROVED) --- */
+        
         .header { 
             background-color: #fff; 
             border-bottom: 1px solid #e0e0e0; 
@@ -20,19 +20,19 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
-        /* The Nav container aligns items horizontally */
+        
         nav {
             display: flex;
-            justify-content: space-between; /* Pushes Logo left, Buttons right */
-            align-items: center; /* Vertically centers them */
+            justify-content: space-between; 
+            align-items: center; 
             max-width: 1200px;
             margin: 0 auto;
             padding: 15px 20px;
         }
 
-        /* Logo Styling */
+        
         .logo { 
-            font-size: 10px; /* Fixed: Was 4px */
+            font-size: 10px; 
             font-weight: 400; 
             color: #0e0a07; 
             text-decoration: none; 
@@ -42,28 +42,28 @@
         }
 
         .logo-img {
-            height: 40px; /* Set a proper height for the image */
+            height: 40px; 
             width: auto;
         }
 
-        /* Add this to your CSS to style the disabled cart button */
+        
         .cart-btn:disabled {
-            background-color: #e0e0e0; /* Grey background */
-            color: #999; /* Grey text */
-            cursor: not-allowed; /* Shows a 'no' symbol on hover */
+            background-color: #e0e0e0; 
+            color: #999; 
+            cursor: not-allowed; 
             box-shadow: none;
         }
         
-        /* Optional: Hide the red counter badge when cart is empty/disabled */
+        
         .cart-btn:disabled .cart-count {
             display: none;
         }
         
-        /* Group for the buttons */
+        
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 15px; /* Spacing between Lessons and Cart */
+            gap: 15px; 
         }
 
         .nav-btn { 
@@ -100,15 +100,15 @@
             vertical-align: middle;
         }
 
-        /* --- CONTENT STYLES --- */
+        
         .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
         
-        /* Search & Sort */
+        
         .search-bar { display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; }
         .search-input { flex: 1; padding: 12px; border: 1px solid #ccc; border-radius: 8px; }
         .sort-select { padding: 12px; border: 1px solid #ccc; border-radius: 8px; background: white; cursor: pointer; }
 
-        /* Grid */
+        
         .lessons-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; }
         .lesson-card { border: 1px solid #e0e0e0; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; background: white; transition: transform 0.2s; }
         .lesson-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
@@ -117,20 +117,20 @@
         .lesson-title { font-size: 18px; font-weight: 700; }
         .lesson-info { font-size: 14px; color: #666; display: flex; justify-content: space-between; }
         
-        /* Buttons */
+        
         .btn { padding: 12px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; width: 100%; margin-top: auto; transition: 0.2s; }
         .btn-add { background-color: #0e0a07; color: white; }
         .btn-add:disabled { background-color: #ccc; cursor: not-allowed; }
         .btn-add:hover:not(:disabled) { background-color: #333; }
         
-        /* Cart Page */
+        
         .cart-item { display: flex; gap: 20px; border: 1px solid #eee; padding: 15px; border-radius: 8px; margin-bottom: 15px; align-items: center; background: white; }
         .cart-img { width: 80px; height: 60px; object-fit: cover; border-radius: 4px; }
         .cart-details { flex: 1; }
         .btn-remove { background: #c0392b; color: white; width: auto; padding: 8px 16px; }
         .btn-remove:hover { background: #a93226; }
 
-        /* Checkout */
+        
         .checkout-box { background: #f9f9f9; padding: 30px; border-radius: 12px; margin-top: 40px; border: 1px solid #eee; }
         .form-group { margin-bottom: 15px; }
         .form-group label { display: block; margin-bottom: 5px; font-weight: 600; }
